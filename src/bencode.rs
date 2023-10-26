@@ -19,6 +19,8 @@ pub fn decode_bencoded_value(encoded_value: &str) -> (serde_json::Value, &str) {
     return (serde_json::Value::Null, encoded_value);
 }
 
+
+//use case implementation in idividual functions
 pub fn decode_string(encoded_value: &str) -> (serde_json::Value, &str) {
     // Example: "5:hello" -> "hello"
     let colon_index = encoded_value.find(':').unwrap();

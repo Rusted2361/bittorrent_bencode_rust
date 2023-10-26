@@ -15,6 +15,7 @@ fn main() {
         println!("unknown command: {}", args[1])
     }
 }
+//Unit test for every use case
 #[cfg(test)]
 mod tests {
     use super::*;
